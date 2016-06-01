@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Varada Gurjar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #fff;
+  }
+
+  .skill-table{
+    color: white;
+    font-size: 16px;  
+  }
+  .skill{
+    color: #00e6ac;
+    font-size: 16px;
+  }
+
+  .index{
+     border: 2px solid #ff884d;
+    color: #ff884d;
+  }
+
+  .border {
+  border: 2px solid white;
+  }
+
+  div.col-sm-10{
+    border: 2px solid #00e6ac;
+    font: #00e6ac;
+  }  
+
+  .container {
+      padding: 80px 120px;
+	color: #fff;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+
+<!--->
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+body {
+  background: #25303B;
+}
+section#timeline {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+section#timeline:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -1px;
+  width: 2px;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+}
+section#timeline article {
+  width: 100%;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+section#timeline article:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+section#timeline article div.inner {
+  width: 40%;
+  float: left;
+  margin: 5px 0 0 0;
+  border-radius: 10px;
+}
+section#timeline article div.inner span.date {
+  display: block;
+  width: 70px;
+  height: 80px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  border-radius: 80%;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #25303B;
+  color: rgba(255,255,255,0.5);
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 0 7px #25303B;
+}
+section#timeline article div.inner span.date span {
+  display: block;
+  text-align: center;
+}
+section#timeline article div.inner span.date span.day {
+  font-size: 10px;
+}
+section#timeline article div.inner span.date span.month {
+  font-size: 18px;
+}
+section#timeline article div.inner span.date span.year {
+  font-size: 10px;
+}
+section#timeline article div.inner h2 {
+  padding: 15px;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+section#timeline article div.inner h2:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  	width: 10px; 
+	  height: 10px;
+  -webkit-transform: rotate(-45deg);
+}
+section#timeline article div.inner p {
+  padding: 15px;
+  margin: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #656565;
+  border-radius: 0 0 6px 6px;
+}
+section#timeline article:nth-child(2n+2) div.inner {
+  float: right;
+}
+section#timeline article:nth-child(2n+2) div.inner h2:after {
+  left: -5px;
+}
+section#timeline article:nth-child(6) div.inner h2 {
+  background: #e74c3c;
+}
+
+section#timeline article:nth-child(1) div.inner h2 {
+  background: #e74c3c;
+}
+section#timeline article:nth-child(1) div.inner h2:after {
+  background: #e74c3c;
+}
+section#timeline article:nth-child(2) div.inner h2 {
+  background: #2ecc71;
+}
+section#timeline article:nth-child(2) div.inner h2:after {
+  background: #2ecc71;
+}
+section#timeline article:nth-child(3) div.inner h2 {
+  background: #e67e22;
+}
+section#timeline article:nth-child(3) div.inner h2:after {
+  background: #e67e22;
+}
+section#timeline article:nth-child(4) div.inner h2 {
+  background: #1abc9c;
+}
+section#timeline article:nth-child(4) div.inner h2:after {
+  background: #1abc9c;
+}
+section#timeline article:nth-child(5) div.inner h2 {
+  background: #9b59b6;
+}
+section#timeline article:nth-child(5) div.inner h2:after {
+  background: #9b59b6;
+}
+
+<!--->
+
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      /*-webkit-filter: grayscale(90%);
+      filter: grayscale(90%);  make all photos black and white */ 
+       width: 100%;/* Set width to 100% */
+       height: auto;
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#resume">RESUME</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="napa.jpg" class="img-responsive" alt="Napa - Wine Tour" >
+        <div class="carousel-caption">
+          <h3><b>Napa Valley</b></h3>
+          <p><b><i>A walk through the vineyards, Castello di Amorosa wine tour and quiet dinner at downtown Napa.</i></b></p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="giant_redwood.jpg" alt="Avenue of Giants">
+        <div class="carousel-caption">
+          <h3>Avenue of Giants</h3>
+          <p><b><i>Crater Lake, Klamath falls, Avenue of giants - A great trip!</i></b></p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="ggbridge.jpg" alt="San Francisco" >
+        <div class="carousel-caption">
+          <h3>San Francisco</h3>
+          <p><b><i>Vista point and all recommended attractions - Golden Gate bridge, the crooked Lombard street, <br>Ghirardelli square ...among others.</i></b></p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="resume" class="container text-center">
+  <h3>My Resume</h3>
+  <section id="timeline">
+   <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">1<sup>st</sup></span>
+        <span class="month">Apr</span>
+        <span class="year">2016</span>
+      </span>
+      <h2>Graduated MS-Computer Science and Engineering</h2>
+      <p> Graduated from Santa Clara University recently with an MS in Computer Science and Engineering.<br>
+      The coursework included lectures and projects in Advanced Java, Softwware Design Patterns,<br>
+      Android Programming, R Statistical Tools and Programming, Data Analysis and Big Data.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">30<sup>th</sup></span>
+        <span class="month">Sep</span>
+        <span class="year">2013</span>
+      </span>
+      <h2>Junior Developer</h2>
+      <p>OOD in C++/Java. running test cases and checking for any code regressions <br>
+UI development on windows and unix and UX improvements  <br> 
+Regular code maintenance and enhancements. <br>Incorporation of client maintenance and suggestions.<br>
+Resolving memory leaks in code and memory errors.<br>
+Experience with source code management, ​version control and ​github</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">24<sup>th</sup></span>
+        <span class="month">Feb</span>
+        <span class="year">2011</span>
+      </span>
+      <h2>Project Engineer</h2>
+      <p> Worked as a project engineer coding in C.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">20<sup>th</sup></span>
+        <span class="month">Jun</span>
+        <span class="year">2008</span>
+      </span>
+      <h2>Bachelor's degree.</h2>
+      <p>Graduated with Bachelor's degree in Computer Engineering from the University of Mumbai. Studied subjects like OS, Data structures ,Object oriented programming etc.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">15<sup>th</sup></span>
+        <span class="month">Jul</span>
+        <span class="year">2004</span>
+      </span>
+      <h2>Graduated High School</h2>
+      <p>Completed High school from St Xaviers College, Mumbai. Studied Physics, Mathematics and Chemistry along with Languages (Hindi and German) and Economics.<br> Additionally participated in multiple social events.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">15<sup>th</sup></span>
+        <span class="month">Jul</span>
+        <span class="year">2002</span>
+      </span>
+      <h2>Secondary  School</h2>
+      <p>Completed Secondary school from St Annes High School, Mumbai. St Annes High School is part of the wide network of schools within the Jesuit Society Jesus and Mary.<br> Apart from the sciences and other technical subjects, I learnt fluent written and verbal communication.</p>
+    </div>
+  </article>
+</section>
+
+
+
+</div>
+
+<div id="skills">
+   <h3 class="text-center">Skills</h3>
+    <div class="row">
+        <div class="col-md-1"> </div>
+        <div class="col-md-2 text-right">
+              <p class="skill">Programming&nbsp;&nbsp;Skills :</p>  
+              <p class="skill">Database&nbsp;&nbsp;Skills :</p> 
+              <p class="skill">Web Programming Skills :</p> 
+              <p class="skill">Web Automation Testing :</p> 
+              <p class="skill">Tools and IDE :</p> 
+              <p class="skill">Operating System :</p> 
+        </div>
+        <div class="col-md-8 text-left">
+             <p class="skill-table">Java,&nbsp;&nbsp;C++,&nbsp;&nbsp;Object Oriented Programming,&nbsp;&nbsp;Android Programming,
+              &nbsp;&nbsp;Javascript,&nbsp;&nbsp;PHP,&nbsp;&nbsp;R Programming,&nbsp;&nbsp;Python.</p> 
+              <p class="skill-table">MySQL,&nbsp;&nbsp;SQLite,&nbsp;&nbsp;Firebase&nbsp;(Cloud Db).
+              <p class="skill-table">Bootstrap,&nbsp;&nbsp;Angular JS,&nbsp;&nbsp;HTML&nbsp;(CSS),&nbsp;&nbsp;Javascript.
+              <p class="skill-table">Selenium(WebDriver),&nbsp;&nbsp;Selenium IDE.
+              <p class="skill-table">Eclipse,&nbsp;&nbsp;Visual Studio,&nbsp;&nbsp;Android Studio,&nbsp;&nbsp;RStudio,
+              &nbsp;&nbsp; Genymotion,&nbsp;&nbsp; Github,&nbsp;&nbsp;Jira.</p> 
+              <p class="skill-table">Windows,&nbsp;&nbsp;Linux,&nbsp;&nbsp;Unix,&nbsp;&nbsp;MacOS.
+        </div>
+
+    </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>To contact me Email me, Call me or Message me on &nbsp;<a href="https://www.linkedin.com/in/varada-gurjar-587b1b89" data-toggle="tooltip" title="Visit my profile">Linked In</a></em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Do contact me!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Santa Clara, CA, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +13109080651</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: varada.gurjar@gmail.com</p>	
+    </div>
+  </div>
+  <br>
+    
+</div>
+
+
+<div id="googleMap"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(37.354107, -121.955238);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:false,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Varada Gurjar <br> +1310-908-0651  &nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/varada-gurjar-587b1b89" data-toggle="tooltip" title="Visit my profile">LinkedIn Profile</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior 
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+})
+</script>
+
+</body>
+</html>
